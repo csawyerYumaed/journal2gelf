@@ -39,7 +39,7 @@ Running as a service
 Copy and edit the included `examples/journal2gelf.service` to
 `/etc/systemd/system`.
 ```
-curl -o /etc/systemd/system/journal2gelf.service https://github.com/csawyerYumaed/journal2gelf/raw/master/examples/journal2gelf.service
+cd /etc/systemd/system; wget https://github.com/csawyerYumaed/journal2gelf/raw/master/examples/journal2gelf.service
 systemctl daemon-reload
 systemctl enable journal2gelf.service
 systemctl start journal2gelf.service
